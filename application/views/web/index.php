@@ -45,10 +45,10 @@
                         </div>
                         <div class="content-right">
                             <h2>SIGN IN</h2>
-                            <?php if($this->session->flashdata('login_error')){?>
-                            <span class="error-message"><?php echo $this->session->flashdata('login_error');?></span>
+                            <?php if($login_error){?>
+                            <span class="error-message"><?php echo $login_error;?></span>
                             <?php }?>
-                            <form name="loginForm" id="loginForm" action="<?php echo base_url();?>web/login" method="post">
+                            <form name="loginForm" id="loginForm" action="<?php echo base_url();?>login/index" method="post">
                                 <ol>
                                     <li>
                                         <input type="text" class="textbox" name="username" id="username" placeholder="Username" value="<?php echo set_value('username');?>"/>

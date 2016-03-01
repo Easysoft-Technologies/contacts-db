@@ -3,7 +3,7 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class users_model extends CI_Model {
+class Users_model extends CI_Model {
 
     var $table = 'user_account_3';
 
@@ -126,17 +126,26 @@ class users_model extends CI_Model {
     }
 
     function check_login() {
-        /* retrun 1-Account Locked,2-Success,3-Invalid username/password,4-Invalid user */
+        /* --------------General Information----------------
+          1-Account Locked
+          2-Login Success
+          3-Invalid username/password
+          4-User not registered
+        */
         $username = $this->input->post('username');
         $password = $this->input->post('password');
         $password = hash("sha256", $password);
 
+        /* Registered users checking section starts */
         $this->db->where(array('USERNAME' => $username));
         $this->db->from($this->table);
         $querys = $this->db->get();
         if ($querys->num_rows() <= 0) {
             return 4;
-        } else {
+        }
+        /* Registered users checking section ends */
+
+        /* Username and password checking starts */ else {
             $condition = array(
                 'USERNAME' => $username,
                 'PASSWORD' => $password
@@ -148,56 +157,62 @@ class users_model extends CI_Model {
             $query = $this->db->get();
             if ($query->num_rows() > 0) {
                 $result = $query->result();
-                if ($result[0]->ACCOUNT_LOCKED == 1) {
+
+                /* Account locked checking starts */
+                if ($result[0]->ACCOUNT_LOCKED == 0) {
                     return 1;
-                } else {
+                }
+                /* Account locked checking ends */ 
+                
+                else {
                     $this->session->set_userdata('username', $result[0]->USERNAME);
                     $this->session->set_userdata('user_category', $result[0]->USER_CATEGORY);
                     $this->session->set_userdata('user_id', $result[0]->EMP_ID);
                     return 2;
                 }
-            }else{
+            } else {
                 return 3;
             }
         }
+        /* Username and password checking ends */
     }
 
-        function change_password() {
+    function change_password() {
 
-            $password = $this->input->post('password');
-            $old = $this->input->post('old_password');
-            $salt = sha1($password);
-            $password = md5($salt . $password);
-            $salt = sha1($old);
-            $old = md5($salt . $old);
-            $this->db->where(array("users_id" => $this->session->userdata('users_id'), 'users_password' => $old));
-            $query = $this->db->get('users');
-            if ($query->num_rows() > 0) {
-                $this->db->where(array("users_id" => $this->session->userdata('users_id')));
-                $this->db->update('users', array('users_password' => $password));
-                return 1;
-            } else {
-                return 0;
-            }
+        $password = $this->input->post('password');
+        $old = $this->input->post('old_password');
+        $salt = sha1($password);
+        $password = md5($salt . $password);
+        $salt = sha1($old);
+        $old = md5($salt . $old);
+        $this->db->where(array("users_id" => $this->session->userdata('users_id'), 'users_password' => $old));
+        $query = $this->db->get('users');
+        if ($query->num_rows() > 0) {
+            $this->db->where(array("users_id" => $this->session->userdata('users_id')));
+            $this->db->update('users', array('users_password' => $password));
+            return 1;
+        } else {
+            return 0;
         }
+    }
 
-        function change_password_user($user_id = '') {
+    function change_password_user($user_id = '') {
 
-            $password = $this->input->post('password');
-            $salt = sha1($password);
-            $password = md5($salt . $password);
+        $password = $this->input->post('password');
+        $salt = sha1($password);
+        $password = md5($salt . $password);
 
+        $this->db->where(array("user_login_id" => $user_id));
+        $query = $this->db->get('user_login');
+        if ($query->num_rows() > 0) {
             $this->db->where(array("user_login_id" => $user_id));
-            $query = $this->db->get('user_login');
-            if ($query->num_rows() > 0) {
-                $this->db->where(array("user_login_id" => $user_id));
-                $this->db->update('user_login', array('user_login_password' => $password));
-                return 1;
-            } else {
-                return 0;
-            }
+            $this->db->update('user_login', array('user_login_password' => $password));
+            return 1;
+        } else {
+            return 0;
         }
-
     }
+
+}
 
 ?>
