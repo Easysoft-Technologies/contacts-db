@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CONTACTS-DB</title>
+<link href="css/style-contacts-DB.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(function () {
+$('#menu').tabify();
+$('#menu2').tabify();
+});
+// ]]>
+</script>
+</head>
+
+<body class="inside-bg">
+<DIV id="wrapper"> 
+  
+  <!-- header div -->
+  <div id="header">
+    <div class="logo"><img src="images/contacts-DB-LOGO.png" width="204" height="110" /></div>
+    <div class="menu-top">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Contacts DB</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- header div --> 
+  
+  <!-- title div -->
+  <div id="inside-title"><img src="images/title.png" width="960" height="70" /></div>
+  <!-- title div --> 
+  
+  <!-- content div -->
+  <div id="main-content-DIV">
+    <div id="content-footer">
+      <h1>Create New Contact</h1>
+      <div class="inside-content-left-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Advanced Search</a></li>
+          <li><a href="#">New Contact</a></li>
+          <li><a href="#">Statistics</a></li>
+          <li><a href="#">Audit Trail</a></li>
+          <li><a href="#">Log out</a></li>
+        </ul>
+      </div>
+      <div class="inside-content">
+        <ul id="menu2" class="menu">
+          <li>Category</li>
+          <li class="active">Profile Info</li>
+          <li>Contact Info</li>
+        </ul>
+        <div id="usage2" class="content">
+          <div style="float:left; width:350px; margin:0 18px 0 0; padding:0">
+            <ol>
+               <li>
+                <label for="name">Supplier Name</label>
+                <input type="text" class="textbox" value="" name="name" />
+              </li>
+              <li>
+                <label for="name">Services Provided</label>
+                <textarea class="textbox" value="" name="name" style="height:50px"></textarea>
+              </li>
+              <li>
+                <label for="name">Comments</label>
+                <textarea class="textbox" value="" name="name" style="height:50px"></textarea>
+              </li>           
+              
+            
+            </ol>
+          </div>
+          <div style="float:left; width:350px; margin:0; padding:0">
+            <ol>
+              
+              <li>
+                <label for="name">Contact Person</label>
+                <input type="text" class="textbox" value="" name="name" />                
+              </li>
+               <li>
+                <label for="name">Term of Payment</label>
+                <textarea class="textbox" value="" name="name" style="height:50px"></textarea>
+                
+              </li>
+              
+            </ol>
+          </div>
+          <div style="clear:left; width:100%; margin:10px 0; padding:0; float:left">
+            <ol>
+              <li>
+                <div class="iconGroup"> <a href="#" class="addtovisitor"></a> <a href="#" class="audittrail"></a> <a href="#" class="mergecontact"></a> <a href="#" class="print"></a> <a href="#" class="delete"></a> <a href="#" class="edit"></a> </div>
+                <input type="submit" name="submit" class="next-btn" id="submit_btn" value="" />
+                <input type="submit" name="submit" class="previous-btn" id="submit_btn" value="" />
+                <input type="submit" name="submit" class="cancel-btn" id="submit_btn" value="" />
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      
+      <!--Footer Div -->
+      <div class="footer">Copyright © 2012 <b>Contacts DB</b>. All rights reserved. <span><a href="#">Home</a> / <a href="#">About Contacts DB</a></span></div>
+      <!-- Footer Div --> 
+    </div>
+  </div>
+  <!-- content div --> 
+  
+</DIV>
+</body>
+</html>

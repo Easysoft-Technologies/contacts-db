@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face
+	{
+  	font-family: 'ArimoRegular';
+  	font-style: normal;
+  	font-weight: normal;
+  	src: local('ArimoRegular'), url('http://themes.googleusercontent.com/font?kit=BkZwJXYnumPMepfEA344yQ') format('truetype');
+  	src: url('../images/arimo-regular-latin-webfont.eot');
+  	src: url('../images/arimo-regular-latin-webfont86d7.eot?#iefix') format('embedded-opentype'),
+       url('../images/arimo-regular-latin-webfont.woff') format('woff'),
+       url('../images/arimo-regular-latin-webfont.ttf') format('truetype'),
+       url('../images/arimo-regular-latin-webfont.svg.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+*{ margin:0px; padding:0px;}
+body {font-family:'ArimoRegular'; font-size:13px; line-height:19px;	color:#898989;}
+	
+.home-bg{background-attachment: scroll;	background-image: url(../images/MAIN-BG.jpg);	background-repeat: no-repeat;
+	background-position: center top;}
+.inside-bg{background-attachment: scroll;	background-image: url(../images/MAIN-BG.jpg);	background-repeat: no-repeat;
+	background-position: center top;}
+
+#wrapper{width:980px;margin:0 auto;}
+h1{font-family:'ArimoRegular'; font-size:21px; font-weight:normal; color:#005aae; border-bottom:1px solid #CCC; padding-bottom:10px; margin-bottom:10px;}
+h2{font-family:'ArimoRegular'; font-size:18px; font-weight:normal; color:#005aae;}
+h3{font-family:'ArimoRegular'; font-size:15px; font-weight:normal; color:#005aae; border-bottom:1px solid #EBEBEB; padding:10px 0 10px 0;}
+ a{color:#005aae; text-decoration:none;	}
+ a:hover{color:#898989; text-decoration:none;}
+.blue-text{color: #005AAE;}
+
+/* Header */
+#header{ width:960px; padding:0 10px 16px 10px; height:110x; float:left;}
+.logo{ float:left; width:480px; height:110px;}
+.menu-top{ float:left; width:480px; height:29px; padding-top:81px;}
+.menu-top ul{list-style:none; float:right;}
+.menu-top ul li{ float:left;}
+.menu-top ul li a{display:block; color:#FFF; background-color:#252525; text-decoration:none; margin-left:10px; padding:5px 15px 5px 15px;}
+.menu-top ul li a:hover{background-color:#0054a6;}
+.menu-top ul li .active{background-color:#0054a6;}
+/* Header */
+
+/* Title - Home */
+#home-title{ width:960px; height:70px; float:left;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color:#FFF; font-size:36px; font-weight:normal; padding:55px 10px 55px 10px;}
+#inside-title{ width:960px; height:70px; float:left;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color:#FFF; font-size:36px; font-weight:normal; padding:20px 10px 20px 10px;}
+/* Title - Home */
+
+/* Content */
+#main-content-DIV{float:left;height:auto;width:980px;background-attachment: scroll;
+	background-image: url(../images/shadow.png);background-repeat: no-repeat;background-position: center top;}
+#content-footer{ width:918px; border:#CCC 1px solid; background-color:#FFF; height:auto; float:left; margin:0 10px 0 10px; padding:15px 20px 15px 20px;}
+	
+	.content{ width:918px; height:auto;}
+	.inside-content{ width:718px; height:auto; min-height:290px; float:left;}
+	.inside-content-left-menu{ width:159px; height:auto; min-height:290px; float:left; border-right:1px solid #EBEBEB; margin-right:20px; padding-right:20px;}
+	
+	.inside-content-left-menu ul{ margin:0px; padding:0px;  float:left; margin-right:20px;}
+.inside-content-left-menu li{
+float:left;	width:100%;list-style:none;color:#464646;font-size:13px; line-height:18px;
+padding:5px 0 5px 0px; width:180px; border-bottom:1px solid #EBEBEB;}
+	
+	
+	.inside-content ol{ padding:0px; margin:15px 0 0 0; width:350px;}
+	.inside-content li{ padding:0px 0 10px; margin:0px; list-style:none;}
+	.inside-content li label{ float:left; width:100%; margin-bottom:5px;}
+	.inside-content li .textbox{ border:1px solid #CCCCCC;  width:328px; height:27px; padding:5px 10px;}
+	.inside-content li .selectbox{ border:1px solid #CCCCCC;  width:348px; height:39px; padding:5px 10px; color:#898989;}
+.inside-content input.cancel-btn{	background-attachment: scroll;background-image: url(../images/cancel-btn.jpg);
+background-repeat: no-repeat;background-position: center bottom; border:0px; width:75px; height:30px; margin-right:10px; float:right;}
+.inside-content input.cancel-btn:hover{background-attachment: scroll;	background-image: url(../images/cancel-btn.jpg);
+background-repeat: no-repeat;	background-position: center top; border:0px; width:75px; height:30px;}
+		
+.inside-content input.next-btn{	background-attachment: scroll;background-image: url(../images/next-btn.jpg);
+background-repeat: no-repeat;background-position: center bottom; border:0px; width:64px; height:30px; margin-right:10px; float:right;}
+.inside-content input.next-btn:hover{background-attachment: scroll;	background-image: url(../images/next-btn.jpg);
+background-repeat: no-repeat;	background-position: center top; border:0px; width:64px; height:30px;}
+
+
+.inside-content input.previous-btn{	background-attachment: scroll;background-image: url(../images/previous-btn.jpg);
+background-repeat: no-repeat;background-position: center bottom; border:0px; width:87px; height:30px; margin-right:10px; float:right;}
+.inside-content input.previous-btn:hover{background-attachment: scroll;	background-image: url(../images/previous-btn.jpg);
+background-repeat: no-repeat;	background-position: center top; border:0px; width:87px; height:30px;}
+
+
+.inside-content input.save-btn{	background-attachment: scroll;background-image: url(../images/save-btn.jpg);
+background-repeat: no-repeat;background-position: center bottom; border:0px; width:66px; height:30px; margin-right:10px; float:right;}
+.inside-content input.save-btn:hover{background-attachment: scroll;	background-image: url(../images/save-btn.jpg);
+background-repeat: no-repeat;	background-position: center top; border:0px; width:66px; height:30px;}
+	
+		.inside-content input.continue-btn{	background-attachment: scroll;background-image: url(../images/continue-btn.jpg);
+background-repeat: no-repeat;background-position: center bottom; border:0px; width:88px; height:30px; float:right;}
+.inside-content input.continue-btn:hover{background-attachment: scroll;	background-image: url(../images/continue-btn.jpg);
+	background-repeat: no-repeat;	background-position: center top; border:0px; width:88px; height:30px;}
+	
+	.inside-content input.search-btn{	background-attachment: scroll;background-image: url(../images/search-btn.jpg);
+background-repeat: no-repeat;background-position: center top; border:0px; width:88px; height:30px; float:right;}
+.inside-content input.search-btn:hover{background-attachment: scroll;	background-image: url(../images/search-btn.jpg);
+background-repeat: no-repeat;	background-position: center bottom; border:0px; width:88px; height:30px;}
+	
+	.bullet{background-attachment: scroll;background-image: url(../images/bullet.jpg);	background-repeat: no-repeat;
+	background-position: left center; border-bottom:1px solid #CCC; padding:10px 0 10px 15px;}
+	.content-left{ width:598px; float:left;}
+	.text{ width:279px; height:auto; float:left; padding-right:20px;}
+	.text p{ padding-bottom:10px;}
+	.content-right{ width:299px; border-left:1px solid #CCC; float:left; padding:18px 0 0 20px;}
+	.content-right ol{ padding:0px; margin:15px 0 0 0; display:block; width:100%; float:left;}
+	.content-right li{ padding:0px; margin:0px 0 15px 0; list-style:none; }
+	.content-right li .textbox{width:278px; height:28px; line-height:28px; padding:0px 10px; font-size:13px; border:1px solid #CCC; color:#898989;}
+	.content-right li.part1{ width:92px; height:27px; float:left;}
+	.content-right li.part2{ width:206px; height: auto; float:left; border-top:1px solid #CCC;}
+	.content-right li.part2 p{ border-bottom:1px solid #CCC; padding:5px 0 5px 0}
+	.content-right li.part2 a {	color:#005aae;	background-attachment: scroll;	background-image: url(../images/arrow-menu.png);
+	background-repeat: no-repeat;background-position: left center; text-decoration:none; padding-left:11px;}
+	
+	.content-right li.part2 a:hover{ color:#898989;}
+	
+.content-right input.sign-in-btn{	background-attachment: scroll;background-image: url(../images/sign-in-1.jpg);
+background-repeat: no-repeat;background-position: center center; border:0px; width:72px; height:27px;}
+.content-right input.sign-in-btn:hover{background-attachment: scroll;	background-image: url(../images/sign-in-2.jpg);
+	background-repeat: no-repeat;	background-position: center center; border:0px; width:72px; height:27px;}
+	
+
+
+.regular-checkbox {	display: none;}
+.regular-checkbox + label {	background-color: #fafafa;
+	border: 1px solid #cacece;	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 8px;display: inline-block; float:left; margin-right:10px;position: relative;
+}
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
+
+.regular-checkbox:checked + label {
+	background-color: #e9ecee;	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';	font-size: 14px;position: absolute;
+	top: 0px;left: 3px;	color: #99a1a7;}
+	
+	
+/* Content */
+
+.menu { padding: 0; clear: both; float:left; padding-top:15px;}
+.menu li { display: inline;}
+.menu li a,.menu li { background: #ebebeb; padding:5px 15px 5px 15px; float:left; text-decoration: none; color: #898989; font-weight: normal; margin-right:5px; font-size:15px;}
+.menu li.active a, .menu li.active{ background: #0072bc; color:#FFF; }
+.content { float: left; clear: both; padding:0px;/* width:718px;*/ padding:15px 0 15px 0; }
+#description2.content, #usage2.content { width:718px;}
+#description2.content ol, #usage2.content ol{width:718px;}
+
+
+/* Footer */
+.footer{ width:918px; border-top:1px solid #CCC; padding:15px 0 0 0; margin-top:15px; float:left;}
+.footer b{ color:#464646; font-weight:normal;}
+.footer span{ float:right;}
+.footer span a{ color:#0054a6; text-decoration:none;}
+.footer span a:hover{ color:#464646; text-decoration:none;}
+/* Footer */
+
+
+/* search result table */
+
+.employee-result { margin:15px 0px 10px 0px; float:left; width:920px; line-height:18px; font-size:13px; font-weight:normal;}
+.employee-result ul{ float:left; width:920px; padding:0px; margin:0px;}
+.employee-result li{ float:left; padding:0px ; margin:0px; list-style:none; border-bottom:1px solid #FFF; line-height:18px;}
+.employee-result li .block-1{ width:20px; float:left; text-align:left; padding:5px 10px 5px 10px;}
+.employee-result li .block-2{ width:149px; float:left; text-align:left; padding:5px 10px 5px 10px; border-left:1px solid #FFF;}
+.employee-result li .block-3{ width:79px; float:left; text-align:left; padding:5px 10px 5px 10px; border-left:1px solid #FFF;}
+.bgcolor-1{ background-color:#cccccc; color:#FFF; font-weight:normal;}
+.bgcolor-2{ background-color:#f5f5f5; color:#898989; font-weight:normal;}
+.bgcolor-3{ background-color:#ebebeb; color:#898989; font-weight:normal;}
+
+/* search result table */
+
+/**/
+.search{
+	background-attachment: scroll;
+	background-image: url(../images/line-BG.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	float:left;
+	background-color:#f5f5f5;
+}
+.accordionartsbutton {
+	float: left;
+	_float: none;  /* Float works in all browsers but IE6 */
+	width:638px; margin:0 20px 0 20px;
+	cursor:pointer;
+	background: url(../images/down-arts.png) 98% center no-repeat;
+	color:#0072bc;	
+	font-weight:normal; padding:10px 20px 10px 20px;
+	line-height:20px;
+	font-size:16px;
+	}
+	
+	.accordionartsbutton span{ padding:0 10px 0 10px; background-color:#f5f5f5;}
+	
+.accordionartscontent {	
+	width: 678px;
+	float: left;font-size:14px;line-height:20px;height:auto;
+	padding:0px 20px 10px 20px;
+	_float: none; /* Float works in all browsers but IE6 */
+	line-height:18px;
+	}
+	
+	.accordionartscontent ol{ width:698px;}
+	
+/***********************************************************************************************************************
+ EXTRA STYLES ADDED FOR MOUSEOVER / ACTIVE EVENTS
+************************************************************************************************************************/
+
+.onarts {
+	background: url(../images/up-arts.png) 98% center no-repeat;
+	color:#0072bc;
+	}
+	
+.overarts {
+	background: url(../images/down-arts.png) 98% center no-repeat;
+	color:#0072bc;
+	}
+	
+	.accordionartscontent ol{ padding:0px; margin:15px 0 0 0; display:block; width:100%; float:left;}
+	.accordionartscontent li{ padding:0px; margin:0px 0 15px 0; list-style:none; width:880px; }
+	.accordionartscontent li .textbox{width:185px; height:28px; line-height:22px; padding:3px 10px 3px 10px; font-size:13px; border:1px solid #CCC; color:#898989;}
+	.accordionartscontent li.part1{ width:204px; height:50px; float:left; margin-right:20px;}
+	.accordionartscontent li.part2{ width:205px; height: auto; float:left;}
+	.accordionartscontent li.part2 p{ border-bottom:1px solid #CCC; padding:5px 0 5px 0}
+	.accordionartscontent li.part2 a {	color:#005aae;	background-attachment: scroll;	background-image: url(../images/arrow-menu.png);
+	background-repeat: no-repeat;background-position: left center; text-decoration:none; padding-left:11px;}
+	
+.accordionartscontent input.search-btn{	background-attachment: scroll;background-image: url(../images/search-btn.jpg);
+background-repeat: no-repeat;background-position: center top; border:0px; width:88px; height:30px; float:right;}
+.accordionartscontent input.search-btn:hover{background-attachment: scroll;	background-image: url(../images/search-btn.jpg);
+background-repeat: no-repeat;	background-position: center bottom; border:0px; width:88px; height:30px;}
+/**/
+
+.menu-type{height:31px;width:556px;background-attachment: scroll;
+background-image: url(../images/bg-menu.jpg);background-repeat: repeat-x;background-position: left top; margin-top:25px; border-left:1px solid #CCC;}
+.menu-type a{ text-decoration:none; font-size:16px; padding:7px 35px 0 15px; float:left;}
+.menu-type a:hover{ text-decoration:none; font-size:16px; padding:7px 35px 0 15px;}
+.link{}
+
+
+
+/***************************************************************************************************
+AUDIT TRIAL FILTER
+****************************************************************************************************/
+.audit-trial-filter { float: left; font-size: 14px; height: auto; line-height: 18px; padding: 0 0 10px; width: 718px;}
+	.audit-trial-filter ol{ padding:0px; margin:15px 0 0 0; display:block; width:100%; float:left; list-style-type:none}
+	.audit-trial-filter li{ padding:0px; margin:0px 15px 15px 0; list-style:none; width:160px; float:left;  }
+	.audit-trial-filter input[type="text"] { width:110px}
+	 .calendar{background: url(../images/calendar.gif) no-repeat 0 0; width:26px; height:26px; border:0; cursor:pointer; float:right; margin-top:5px}
+	 .calendar:hover{background: url(../images/calendar.gif) no-repeat 0 -26px; width:26px; height:26px; border:0; cursor:pointer; float:right; margin-top:5px}
+	 
+	 
+	 
+/********************************************************************************
+Icon Group
+********************************************************************************/
+.iconGroup{ float:left; width:auto; margin:0 20px 0 0;} 
+.addtovisitor, .audittrail,.mergecontact,.print,.delete,.edit, .first, .previous, .next, .last{ width:26px; height:26px; background-position:0 0; background-repeat:no-repeat; display:block; float:left; margin-right:15px}
+.addtovisitor:hover, .audittrail:hover,.mergecontact:hover,.print:hover,.delete:hover,.edit:hover,.first:hover, .previous:hover, .next:hover, .last:hover{ background-position:0 -26px;}
+
+
+
+.gridIcons .iconGroup .addtovisitor,
+.gridIcons .iconGroup .audittrail,
+.gridIcons .iconGroup .mergecontact,
+.gridIcons .iconGroup .print,
+.gridIcons .iconGroup .delete,
+.gridIcons .iconGroup .edit,
+.gridIcons .gridPagination .first,
+.gridIcons .gridPagination .previous,
+.gridIcons .gridPagination .next,
+.gridIcons .gridPagination .last{ width:18px; height:18px; background-position:0 0; background-repeat:no-repeat; display:block; float:left; margin-right:15px}
+
+.gridIcons .iconGroup .addtovisitor:hover,
+.gridIcons .iconGroup .audittrail:hover,
+.gridIcons .iconGroup .mergecontact:hover,
+.gridIcons .iconGroup .print:hover,
+.gridIcons .iconGroup .delete:hover,
+.gridIcons .iconGroup .edit:hover,
+.gridIcons .gridPagination .first:hover,
+.gridIcons .gridPagination .previous:hover,
+.gridIcons .gridPagination .next:hover,
+.gridIcons .gridPagination .last:hover{ background-position:0 -18px; }
+
+.gridIcons .iconGroup .addtovisitor{ background-image:url(../images/18/addtovisitor.png)}
+.gridIcons .iconGroup .audittrail{background-image:url(../images/18/audittrail.png)}
+.gridIcons .iconGroup .mergecontact{background-image:url(../images/18/mergecontact.png)}
+.gridIcons .iconGroup .print{background-image:url(../images/18/print.png)}
+.gridIcons .iconGroup .delete{background-image:url(../images/18/delete.png)}
+.gridIcons .iconGroup .edit{background-image:url(../images/18/edit.png)}
+.gridIcons .gridPagination .first{background-image:url(../images/18/first.png)}
+.gridIcons .gridPagination .previous{background-image:url(../images/18/previous.png)}
+.gridIcons .gridPagination .next{background-image:url(../images/18/next.png)}
+.gridIcons .gridPagination .last{background-image:url(../images/18/last.png)}
+
+.gridIcons { margin:10px 0; width:100%; float:left; padding:0}
+
+
+	 
+.addtovisitor{ background-image:url(../images/addtovisitor.png) }
+.audittrail{ background-image:url(../images/audittrail.png)}
+.mergecontact{ background-image:url(../images/mergecontact.png)}
+.print{ background-image:url(../images/print.png)}
+.delete{ background-image:url(../images/delete.png)}
+.edit{ background-image:url(../images/edit.png)}
+
+
+.first{ background-image:url(../images/first.png)}
+.previous{ background-image:url(../images/previous.png)}
+.next{ background-image:url(../images/next.png)}
+.last{ background-image:url(../images/last.png)}
+
+
+.gridPagination{float:right; width:auto; margin:0 20px 0 0;}
+
+
+#usage2.content .calendar{ float:none}
